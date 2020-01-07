@@ -51,9 +51,7 @@ class App extends Component {
     this.setState({
       center: [position.coords.latitude, position.coords.longitude ]
     })
-
-    console.log(this.state.center);
-  
+      
   }
  
   getUser(e){
@@ -86,12 +84,12 @@ class App extends Component {
     
     return(
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
+    <div className="container-fluid">
+      <div className="row">
+        <div className="col-md-4">
           <Perfil user={user} />
         </div>
-        <div class="col-sm-8">
+        <div className="col-sm-8">
           <h4>Repositórios</h4>
           {repos.map (repo => <Repositorio key={repo.name} repo={repo} />)}
           
@@ -131,12 +129,12 @@ class App extends Component {
       <div className="App">
         <Topo />
   
-        <div class="jumbotron jumbotron-fluid">
-          <div class="container">
-            <h1 class="display-4">Pesquisar Usuário</h1>
-            <div class="form-group">
+        <div className="jumbotron jumbotron-fluid">
+          <div className="container">
+            <h1 className="display-4">Pesquisar Usuário</h1>
+            <div className="form-group">
               <label for="nome">Digite o nome do usuário</label>
-              <input onChange={this.getUser.bind(this)} type="text" class="form-control" id="nome" />
+              <input onChange={this.getUser.bind(this)} type="text" className="form-control" id="nome" />
             </div>
           </div>
         </div>
