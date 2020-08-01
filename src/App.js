@@ -101,7 +101,7 @@ class App extends Component {
       <div className="row">
       <div style={{ height: '100vh', width: '100%' }}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: "AIzaSyBHdbbQP-hkzdQ_68Q07GYrqHSufcbZh1Y"}}
+          bootstrapURLKeys={{ key: "preciva colocar a chave aqui"}}
           center={this.state.center}
           defaultZoom={this.state.zoom}
         >
